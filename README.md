@@ -1,4 +1,4 @@
-# A11Y GUI
+# a11y-gui
 
 Accessibility testing, with HTML reports
 
@@ -6,7 +6,7 @@ Accessibility testing, with HTML reports
 
 ## Installation
 
-    npm install a11y-gui
+    npm install -g a11y-gui
 
 ## Usage
 
@@ -14,6 +14,10 @@ Accessibility testing, with HTML reports
     
     # Example:
     a11y-gui https://www.github.com ./my-report.html
+
+## How it works
+
+a11y-gui browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the [Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools).
 
 ## Licence
 
