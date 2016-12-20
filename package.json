@@ -1,0 +1,17 @@
+{
+  "name": "a11y-gui",
+  "version": "1.0.0",
+  "description": "Generates a11y HTML report from Google Accessibility Developer Tools",
+  "main": "a11y-gui.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Radio France",
+  "license": "MIT",
+  "dependencies": {
+    "a11y": "*",
+    "phantomjs-prebuilt": "*",
+    "webpage": "*",
+    "commander": "*"
+  }
+}
