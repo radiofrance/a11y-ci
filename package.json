@@ -9,9 +9,9 @@
   "author": "Radio France",
   "license": "MIT",
   "dependencies": {
-    "a11y": "*",
-    "phantomjs-prebuilt": "*",
+    "a11y": "^0.4.1",
+    "phantomjs": "^2.1.3",
     "webpage": "*",
-    "commander": "*"
+    "commander": "^2.9.0"
   }
 }
