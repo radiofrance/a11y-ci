@@ -8,13 +8,18 @@ program
     .version('0.0.1')
     .description('Generates HTML report for a11y')
     .arguments('<url> <output>')
-    .action(function (url, output) {
-        main(url, output);
+    .option('-t, --timeout <timeout>', 'An integer argument', parseInt)
+    .action(function (url, output,  options) {
+        main(url, output, options);
     })
     .parse(process.argv);
 
 
-function main(url, output) {
+function main(url, output, options) {
+
+    // options
+    options.timeout = options.timeout || 20;
+
     // get source
     console.log('Auditing ' + url);
     console.log('  Fetching sources...');
@@ -23,7 +28,7 @@ function main(url, output) {
 
         // run audit
         console.log('  Running audit...');
-        a11y(url, {resourceTimeout: 10}, function (err, reports) {
+        a11y(url, {resourceTimeout: options.timeout}, function (err, reports) {
             if (err) {
                 throw err;
             }
