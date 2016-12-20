@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": "a11y-gui.js",
   "author": "Radio France",
   "license": "MIT",
   "dependencies": {
