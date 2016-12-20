@@ -17,7 +17,10 @@ Accessibility testing, with HTML reports
 
 ## How it works
 
-a11y-gui browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the [Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools).
+a11y-gui browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the [Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). 
+Click on errors to get more informations.
+
+You can refer to the [Audit rules](https://github.com/GoogleChrome/accessibility-developer-tools/wiki/Audit-Rules)
 
 ## Licence
 
