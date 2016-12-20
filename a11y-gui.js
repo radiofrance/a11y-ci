@@ -23,7 +23,7 @@ function main(url, output) {
 
         // run audit
         console.log('  Running audit...');
-        a11y(url, {delay: 20}, function (err, reports) {
+        a11y(url, {resourceTimeout: 10}, function (err, reports) {
             if (err) {
                 throw err;
             }
