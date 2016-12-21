@@ -2,11 +2,11 @@
   "name": "a11y-ci",
   "version": "1.0.0",
   "description": "Generates a11y reports (HTML, Junit...) from Google Accessibility Developer Tools",
-  "main": "a11y-gui.js",
+  "main": "a11y-ci.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "a11y-gui.js",
+  "bin": "a11y-ci.js",
   "author": "Radio France",
   "license": "MIT",
   "dependencies": {
