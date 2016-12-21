@@ -1,7 +1,7 @@
 {
-  "name": "a11y-gui",
+  "name": "a11y-ci",
   "version": "1.0.0",
-  "description": "Generates a11y HTML report from Google Accessibility Developer Tools",
+  "description": "Generates a11y reports (HTML, Junit...) from Google Accessibility Developer Tools",
   "main": "a11y-gui.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

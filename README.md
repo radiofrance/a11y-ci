@@ -1,6 +1,6 @@
-# a11y-gui
+# a11y-ci
 
-Accessibility testing, with HTML reports
+Accessibility testing, with HTML and JUnit, reports
 
 ![previewing report](docs/screen1.jpg)
 
@@ -10,18 +10,25 @@ Accessibility testing, with HTML reports
 
 ## Usage
 
-    a11y-gui <url> <html-report-file>
+    a11y-gui [--junit=junit.xml] [--html=report.html] [--violations=pmd.xml] <url>
     
     # Example:
-    a11y-gui https://www.github.com ./my-report.html
+    a11y-gui --html=report.html https://www.github.com 
+
+
+Options:
+
++ `--html=myfile.html`: generates a HTML report file
++ `--junit=myfile.xml`: generates a JUnit report file
++ `--violations=myfile.xml`: generates a Pmd (violations) report file
 
 ## How it works
 
-a11y-gui browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the [Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). 
-Click on errors to get more informations.
+a11y-gui browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the 
+[Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). 
 
 You can refer to the [Audit rules](https://github.com/GoogleChrome/accessibility-developer-tools/wiki/Audit-Rules)
 
 ## Licence
 
-Copyright Radio France, Licence [CeCILL-B](http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html) (fully compatible with BSD-like licenses (BSD, X11, MIT))
+Copyright Radio France, Licence [CeCILL-B](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html) (fully compatible with BSD-like licenses (BSD, X11, MIT))
