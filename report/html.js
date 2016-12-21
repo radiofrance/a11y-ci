@@ -21,17 +21,32 @@ module.exports = {
         }
 
         // building Js
-        javascript = '<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>'
-            + '<script type="text/javascript">'
-            + 'function a11y_add_error(level, description, selector, code, ruleUrl) {'
-            + '    $(selector)'
-            + '        .css("background-color", "yellow")'
-            + '        .css("outline", "4px solid red")'
-            + '        .attr("title", description + " (" + code + ")")'
-            + '        .click(function(e) { e.preventDefault(); window.open(ruleUrl) });'
-            + '};'
-            + '$(function() { ' + javascript + '});'
-            + '</script>';
+        javascript = `<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+            <script type="text/javascript">
+            function a11y_add_error(level, description, selector, code, ruleUrl) {
+                var color = 'yellow';
+                switch(level) {
+                    case 'severe': {
+                        color= '#CC0000';
+                        break;
+                    }
+                    case 'warning': {
+                        color= '#CCCC00';
+                        break;
+                    }
+                    case 'severe': {
+                        color= '#0000CC';
+                        break;
+                    }
+                }
+                $(selector)
+                    .css("background-color", color)
+                    .css("outline", "4px solid red")
+                    .attr("title", description + " (" + code +")")
+                    .click(function(e) { e.preventDefault(); window.open(ruleUrl) });
+            };
+            $(function() { ${javascript} });
+            </script>`;
 
 
         // building HTML
