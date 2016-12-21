@@ -1,19 +1,19 @@
 # a11y-ci
 
-Accessibility testing, with HTML and JUnit, reports
+Continuous accessibility testing, with HTML and JUnit, reports
 
 ![previewing report](docs/screen1.jpg)
 
 ## Installation
 
-    npm install -g a11y-gui
+    npm install -g a11y-ci
 
 ## Usage
 
-    a11y-gui [--junit=junit.xml] [--html=report.html] [--violations=pmd.xml] <url>
+    a11y-ci [--junit=junit.xml] [--html=report.html] [--violations=pmd.xml] <url>
     
     # Example:
-    a11y-gui --html=report.html https://www.github.com 
+    a11y-ci --html=report.html https://www.github.com 
 
 
 Options:
@@ -24,7 +24,7 @@ Options:
 
 ## How it works
 
-a11y-gui browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the 
+a11y-ci browses websites with [PhantomJs](https://github.com/ariya/phantomjs) and audit accessibility with the 
 [Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). 
 
 You can refer to the [Audit rules](https://github.com/GoogleChrome/accessibility-developer-tools/wiki/Audit-Rules)
