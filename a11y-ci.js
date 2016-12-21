@@ -52,7 +52,7 @@ function main(url, options) {
                 require('./report/html').generate(url, audit, options.html, html);
             }
 
-            require('./report/cli').generate(url, audit, options.violations);
+            require('./report/cli').generate(url, audit, reports.report);
 
             console.log("\nDone");
         });

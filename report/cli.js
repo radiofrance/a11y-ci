@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 module.exports = {
-    generate: function (url, audits, output) {
+    generate: function (url, audits, report) {
 
         var severity, errors = {}, error, i, check;
 
@@ -18,6 +18,8 @@ module.exports = {
             }
             errors[severity]++;
         }
+
+        console.log(report);
 
         console.log("\nResults:");
         for (error in errors) {
