@@ -11,7 +11,9 @@ program
     .option('-t, --timeout <timeout>', 'Timeout in seconds', parseInt)
     .option('-rv, --violations <violations>', 'Generates a violation XML file', false)
     .option('-rh, --html <html>', 'Generates a HTML report file', false)
+    .option('-rd, --htmldox <html>', 'Generates a HTML Dox report file', false)
     .option('-rj, --junit <junit>', 'Generates a JUnit XML report file', false)
+    .option('-q --quiet', 'Quiet mode', false)
     .action(function (url,  options) {
         main(url, options);
     })
@@ -52,7 +54,14 @@ function main(url, options) {
                 require('./report/html').generate(url, audit, options.html, html);
             }
 
-            require('./report/cli').generate(url, audit, reports.report);
+            // HTML dox logs
+            if(options.htmldox) {
+                require('./report/htmldox').generate(url, audit, options.htmldox, html);
+            }
+
+            if(!options.quiet) {
+                require('./report/cli').generate(url, audit, reports.report);
+            }
 
             console.log("\nDone");
         });

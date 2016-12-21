@@ -10,7 +10,7 @@ Continuous accessibility testing, with HTML and JUnit, reports
 
 ## Usage
 
-    a11y-ci [--junit=junit.xml] [--html=report.html] [--violations=pmd.xml] <url>
+    a11y-ci [--junit=junit.xml] [--html=report.html]  <url>
     
     # Example:
     a11y-ci --html=report.html https://www.github.com 
@@ -18,8 +18,9 @@ Continuous accessibility testing, with HTML and JUnit, reports
 
 Options:
 
-+ `--html=myfile.html`: generates a HTML report file
++ `--html=myfile.html`: generates a visual HTML reports of errors on your page
 + `--junit=myfile.xml`: generates a JUnit report file
++ `--htmldox=myfile.html`: lists all errors in a HTML file
 + `--violations=myfile.xml`: generates a Pmd (violations) report file
 
 ## How it works
