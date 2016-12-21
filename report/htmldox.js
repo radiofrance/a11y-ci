@@ -5,7 +5,7 @@ module.exports = {
 
         console.log('  Generating HTML dox file in ' + output);
 
-        var check, i, selector, html, row, severes= [], warnings= [], infos= [], na= [], passed= [], nbFailed = 0;
+        var check, i, selector, html, row, severes = [], warnings = [], infos = [], na = [], passed = [], nbFailed = 0;
         var today = new Date();
         var datestring = today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear() + " " +
             today.getHours() + ":" + today.getMinutes();
@@ -28,11 +28,11 @@ module.exports = {
             switch (check.result) {
                 case 'FAIL':
                     nbFailed++;
-                    if ('Severe' == check.severity) {
+                    if ('severe' == check.severity.toLowerCase()) {
                         severes.push(row);
-                    } else if ('Warning' == check.severity) {
+                    } else if ('warning' == check.severity.toLowerCase()) {
                         warnings.push(row);
-                    } else if ('Info' == check.severity) {
+                    } else if ('info' == check.severity.toLowerCase()) {
                         infos.push(row);
                     }
                     break;
