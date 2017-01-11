@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+/**
+ * (c) 2016 Radio France
+ * This program is free software: you can redistribute it and/or modify it under the terms of the CeCILL-B license
+ */
 var fs = require('fs');
 var a11y = require('a11y');
 var program = require('commander');

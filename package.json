@@ -8,7 +8,7 @@
   },
   "bin": "a11y-ci.js",
   "author": "Radio France",
-  "license": "MIT",
+  "license": "CECILL-B",
   "dependencies": {
     "a11y": "^0.4.1",
     "phantomjs": "^2.1.3",

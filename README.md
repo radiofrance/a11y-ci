@@ -32,4 +32,10 @@ You can refer to the [Audit rules](https://github.com/GoogleChrome/accessibility
 
 ## Licence
 
-Copyright Radio France, Licence [CeCILL-B](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html) (fully compatible with BSD-like licenses (BSD, X11, MIT))
+Copyright Radio France, Licence [CeCILL-B](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html) (fully compatible with BSD-like licenses (BSD, X11, MIT)).
+
+See [LICENSE](LICENSE) file for more informations
+
+## Version française
+
+Veuillez lire ce [lisez-moi](README-fr.md)

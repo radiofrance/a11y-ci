@@ -1,3 +1,7 @@
+/**
+ * (c) 2016 Radio France
+ * This program is free software: you can redistribute it and/or modify it under the terms of the CeCILL-B license
+ */
 var path = require('path')
 var childProcess = require('child_process');
 var phantomjs = require('phantomjs');
